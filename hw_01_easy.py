@@ -11,3 +11,5 @@ number = int(input("Введите целое число от 0 до 100: "))
 while number <= 100:
 	print(number)
 	number = number + 2
+
+print("Программа завершена")
