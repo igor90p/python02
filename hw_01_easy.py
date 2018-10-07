@@ -38,3 +38,4 @@ if age < 18:
 	access = False
 else:
 	print("Доступ разрешен")
+	access = True
