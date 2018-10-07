@@ -9,3 +9,4 @@ __author__ = 'Пономарев Игорь Борисович'
 
 number = int(input("Введите целое число от 0 до 100: "))
 while number <= 100:
+	print(number)
