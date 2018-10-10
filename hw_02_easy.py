@@ -34,3 +34,4 @@ for fr in fruits[:]:
     for bdfr in bad_fruits[:]:
         if bdfr == fr:
             fruits.remove(bdfr)
+print("Оставшиеся  фрукты нормального качеста: {}".format(fruits))
