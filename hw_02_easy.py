@@ -46,3 +46,15 @@ new_num = []
 
 
 print(num)
+
+
+for el in reversed(num):
+    count = num.index(el)
+    if (el % 2) == 0:
+        new_el= el/4
+        new_num.insert(0, new_el)
+        num.remove(el)
+
+    else:
+        el = el*2
+        num[count] = el
