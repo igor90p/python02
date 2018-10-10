@@ -27,3 +27,10 @@ for num, frut in enumerate (fruits):
 
 fruits = ["Груша", "Киви", "Банан", "Яблоко", "Абрикос", "Апельсин", "Ананас", "Черешня" , "Лимон"]
 bad_fruits = ["Ананас", "Лимон", "Киви", "Арбуз", "Яблоко", "Манго", "Груша"]
+print("Вот что привезли: {}".format(fruits))
+print("Вот что испортилось: {}".format(bad_fruits))
+
+for fr in fruits[:]:
+    for bdfr in bad_fruits[:]:
+        if bdfr == fr:
+            fruits.remove(bdfr)
