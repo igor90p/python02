@@ -58,3 +58,6 @@ for el in reversed(num):
     else:
         el = el*2
         num[count] = el
+
+print(num)
+print(new_num)
