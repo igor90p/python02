@@ -46,3 +46,8 @@ def my_round(number, ndigits):
     fract_digits = ''.join([str (x) for x in fract_digits])
  
     return float(signif_digits + '.' + fract_digits)
+
+print(my_round(2.1234567, 5))
+print(my_round(2.1999967, 5))
+print(my_round(2.9999967, 5))
+print(my_round(34325.88889,3))
