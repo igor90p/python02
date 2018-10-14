@@ -57,3 +57,21 @@ print(my_round(34325.88889,3))
 # Решение реализовать в виде функции.
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 # !!!P.S.: функция не должна НИЧЕГО print'ить
+
+def lucky_ticket(ticket_number):
+
+    ticket_number = repr(ticket_number)
+    left_part = ticket_number[:3]
+    right_part = ticket_number[-3:]
+ 
+    def part_sum(str_part):
+        counter = 0
+        for n in str_part:
+            counter += int(n)
+        return counter
+ 
+    if part_sum(left_part) == part_sum(right_part):
+        return True
+    else:
+        return False
+ 
