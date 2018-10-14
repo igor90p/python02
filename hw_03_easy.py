@@ -74,4 +74,7 @@ def lucky_ticket(ticket_number):
         return True
     else:
         return False
- 
+
+print(lucky_ticket(123006))
+print(lucky_ticket(12321))
+print(lucky_ticket(436751))
