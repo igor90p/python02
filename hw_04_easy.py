@@ -19,4 +19,7 @@ print("list_2:", list_2)
 
 
 fruit_list_1 = ["Апельсин", "Мандарин", "Яблоко", "Киви", "Лимон"]
-fruit_list_2 = ["Манго", "Грейпфрут", "Апельсин", "Банан", "Лимон", "Киви"] 
+fruit_list_2 = ["Манго", "Грейпфрут", "Апельсин", "Банан", "Лимон", "Киви"]
+result_list = [i for i in fruit_list_1 if i in fruit_list_2]
+
+print(result_list) 
