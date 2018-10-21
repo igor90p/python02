@@ -18,3 +18,44 @@
 
 
 import easy
+
+while True:
+    print("[1] - Перейти в папку")
+    print("[2] - Просмотреть содержимое текущей папки")
+    print("[3] - Удалить папку")
+    print("[4] - Создать папку")
+    print("[5] - Выход")
+ 
+    errflag = False
+    menu = 0
+    try:
+        menu = int(input("Выберите действие:"))
+    except ValueError:
+        errflag = True
+ 
+    if menu == 1:
+        dirname = input("Введите имя папки:")
+        try:
+            easy.change_directory(dirname)
+        except Exception as _:
+            print("Успешно перешел в папку " + dirname)
+ 
+    if menu == 2:
+        easy.list_directory()
+ 
+    if menu == 3:
+        dirname = input("Введите имя папки:")
+        try:
+            easy.remove_directory(dirname)
+        except Exception as _:
+            print("Успешно удалил папку " + dirname)
+ 
+    if menu == 4:
+        dirname = input("Введите имя папки:")
+        try:
+            easy.make_directory(dirname)
+        except Exception as _:
+            print("Успешно создал папку " + dirname)
+ 
+    if menu == 5:
+        break
