@@ -40,3 +40,6 @@ def path_remove(path_to_remove):
 if __name__ == "__main__":
     for i in range(1, 10):
                           path_remove("{}_{}".format("dir", i))
+
+# Задача-2:
+# Напишите скрипт, отображающий папки текущей директории.
