@@ -50,3 +50,6 @@ def list_dir(main_path):
 main_path = os.getcwd()
  
 list_dir(main_path)
+
+# Задача-3:
+# Напишите скрипт, создающий копию файла, из которого запущен данный скрипт.
